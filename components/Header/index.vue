@@ -9,7 +9,7 @@
           </a>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
-          <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+          <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false" @click="isMobileMenuOpen = true">
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" />
           </button>
@@ -37,7 +37,7 @@
       From: "opacity-100 scale-100"
       To: "opacity-0 scale-95"
   -->
-    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+    <div v-if="isMobileMenuOpen" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
       <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
         <div class="pt-5 pb-6 px-5">
           <div class="flex items-center justify-between">
@@ -45,7 +45,7 @@
               <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
             </div>
             <div class="-mr-2">
-              <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="isMobileMenuOpen = false">
                 <span class="sr-only">Close menu</span>
                 <XIcon class="h-6 w-6" />
               </button>
@@ -77,10 +77,7 @@ export default {
   },
   data () {
     return {
-      projects: [{ label: 'Project 1', path: '/project1' },
-        { label: 'Project 2', path: '/project2' },
-        { label: 'Project 3', path: '/project3' }
-      ],
+      isMobileMenuOpen: false,
       links: [{ label: 'About', path: { path: '/', hash: 'about' } },
         { label: 'Skills', path: { path: '/', hash: 'skills' } },
         { label: 'Interests', path: { path: '/', hash: 'interests' } },
