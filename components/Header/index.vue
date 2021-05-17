@@ -17,7 +17,7 @@
         <nav class="hidden md:flex space-x-10">
           <HeaderNavItem label="About" :path="{ path: '/', hash: 'about' }" />
           <HeaderNavItem label="Skills" :path="{ path: '/', hash: 'skills' }" />
-          <HeaderNavItem label="Projects" :path="{ path: '/', hash: 'projects' }" has-sub-menu />
+          <HeaderNavItem label="Projects" :path="{ path: '/', hash: 'projects' }" has-sub-menu :sub-menu-items="projects" />
           <HeaderNavItem label="Interests" :path="{ path: '/', hash: 'interest' }" />
           <HeaderNavItem label="Contact" :path="{ path: '/', hash: 'contact' }" />
         </nav>
@@ -194,6 +194,14 @@ import { MenuIcon } from '@vue-hero-icons/solid'
 export default {
   components: {
     MenuIcon
+  },
+  data () {
+    return {
+      projects: [{ label: 'Project 1', path: '/project1' },
+        { label: 'Project 2', path: '/project2' },
+        { label: 'Project 3', path: '/project3' }
+      ]
+    }
   }
 }
 </script>
