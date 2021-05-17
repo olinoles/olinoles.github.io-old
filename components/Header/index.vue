@@ -37,7 +37,13 @@
       From: "opacity-100 scale-100"
       To: "opacity-0 scale-95"
   -->
-    <div v-if="isMobileMenuOpen" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+    <button
+      v-if="isMobileMenuOpen"
+      class="fixed top-0 bottom-0 left-0 right-0 h-full w-full cursor-default focus:outline-none"
+      aria--hidden="true"
+      @click="isMobileMenuOpen = false"
+    />
+    <div v-if="isMobileMenuOpen" class="absolute top-0 inset-x-0 p-2 transform origin-top-right md:hidden">
       <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
         <div class="pt-5 pb-6 px-5">
           <div class="flex items-center justify-between">
