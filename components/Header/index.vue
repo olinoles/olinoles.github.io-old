@@ -26,52 +26,43 @@
         </nav>
       </div>
     </div>
-
-    <!--
-    Mobile menu, show/hide based on mobile menu state.
-
-    Entering: "duration-200 ease-out"
-      From: "opacity-0 scale-95"
-      To: "opacity-100 scale-100"
-    Leaving: "duration-100 ease-in"
-      From: "opacity-100 scale-100"
-      To: "opacity-0 scale-95"
-  -->
     <button
       v-if="isMobileMenuOpen"
       class="fixed top-0 bottom-0 left-0 right-0 h-full w-full cursor-default focus:outline-none"
       aria--hidden="true"
       @click="isMobileMenuOpen = false"
     />
-    <div v-if="isMobileMenuOpen" class="absolute top-0 inset-x-0 p-2 transform origin-top-right md:hidden">
-      <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-        <div class="pt-5 pb-6 px-5">
-          <div class="flex items-center justify-between">
-            <div>
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+    <transition name="flyout">
+      <div v-if="isMobileMenuOpen" class="absolute top-0 inset-x-0 p-2 transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+              </div>
+              <div class="-mr-2">
+                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="isMobileMenuOpen = false">
+                  <span class="sr-only">Close menu</span>
+                  <XIcon class="h-6 w-6" />
+                </button>
+              </div>
             </div>
-            <div class="-mr-2">
-              <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="isMobileMenuOpen = false">
-                <span class="sr-only">Close menu</span>
-                <XIcon class="h-6 w-6" />
-              </button>
+            <div class="mt-6">
+              <nav class="grid gap-y-8">
+                <HeaderNavItemMobile
+                  v-for="link in links"
+                  :key="`linkitem-${link.label}`"
+                  :label="link.label"
+                  :path="link.path"
+                  :has-sub-menu="link.hasSubMenu"
+                  :sub-menu-items="link.subItems"
+                />
+              </nav>
             </div>
-          </div>
-          <div class="mt-6">
-            <nav class="grid gap-y-8">
-              <HeaderNavItemMobile
-                v-for="link in links"
-                :key="`linkitem-${link.label}`"
-                :label="link.label"
-                :path="link.path"
-                :has-sub-menu="link.hasSubMenu"
-                :sub-menu-items="link.subItems"
-              />
-            </nav>
           </div>
         </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 <script>
@@ -102,3 +93,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.flyout-enter-active, .flyout-leave-active {
+  @apply duration-200 ease-in-out;
+}
+.flyout-enter-to, .flyout-leave {
+  @apply translate-x-0 opacity-100;
+}
+.flyout-leave-to, .flyout-enter {
+  @apply translate-x-5 opacity-0;
+}
+</style>

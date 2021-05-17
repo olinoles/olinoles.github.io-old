@@ -7,11 +7,13 @@
             -->
       <ChevronDownIcon class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" />
     </a>
-    <div v-if="subMenuItems && isOpen" class="grid gap-y-8 mt-6 ml-4">
-      <div v-for="item in subMenuItems" :key="item.label" :v-key="`subitem-${item.label}`" class="text-base font-medium text-gray-500 hover:text-gray-900">
-        {{ item.label }}
+    <transition name="slide">
+      <div v-if="subMenuItems && isOpen" class="grid gap-y-8 mt-6 ml-4">
+        <div v-for="item in subMenuItems" :key="item.label" :v-key="`subitem-${item.label}`" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          {{ item.label }}
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 
   <nuxt-link v-else :to="path" class="text-base font-medium text-gray-500 hover:text-gray-900">
@@ -52,3 +54,20 @@ export default {
   }
 }
 </script>
+
+<style>
+.slide-enter-active {
+  animation: menu-slide .5s;
+}
+.slide-leave-active {
+  animation: menu-slide .5s reverse;
+}
+@keyframes menu-slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+</style>
