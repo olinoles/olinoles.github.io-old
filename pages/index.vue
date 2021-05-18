@@ -1,7 +1,8 @@
 <template>
-  <div />
+  <div><about /></div>
 </template>
 
 <script>
-export default {}
+import About from '~/components/About.vue'
+export default { components: { About } }
 </script>
