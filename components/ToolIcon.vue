@@ -6,7 +6,7 @@
   >
     <img
       class="h-14 w-auto mx-4 my-4"
-      :src="`/icons/${icon}`"
+      :src="`/portfolio/icons/${icon}`"
       alt=""
     ><transition name="slide">
       <p v-show="showTitle" class="absolute mx-auto text-center z-10 bg-gray-400 bg-opacity-80 text-blue-800 rounded-md p-1 font-bold text-sm">
