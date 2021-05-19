@@ -1,6 +1,6 @@
 <template>
-  <div id="skills" class="pb-32 med-blue lg:pt-20 bg-image">
-    <div class="lg:mx-72 md:mx-40 mx-5 my-5">
+  <div id="skills" class="pb-32 med-blue lg:pt-20 bg-image mx-auto w-full">
+    <div class="mx-auto my-5 max-w-5xl relative">
       <div class="bg-white shadow overflow-hidden sm:rounded-lg">
         <div class="px-4 py-5 sm:px-6">
           <h2 class="title mb-4">

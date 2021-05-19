@@ -1,6 +1,6 @@
 <template>
   <div class="pb-4 lg:pb-10 bg-darkblue">
-    <div class="flex justify-center flex-col md:flex-row lg:mx-72 lg:flex-row">
+    <div class="flex justify-center flex-col md:flex-row mx-auto lg:flex-row">
       <div class="inline-block max-w-xl lg:py-20 px-4 py-8 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
           Hi, I'm Oliver
