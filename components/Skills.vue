@@ -1,14 +1,14 @@
 <template>
   <div id="skills" class="pb-32 med-blue lg:pt-20 bg-image mx-auto p-5 w-full">
     <div class="mx-auto my-5 max-w-5xl relative">
-      <div class="bg-white shadow-xl overflow-hidden sm:rounded-lg">
+      <div class="bg-white shadow-xl overflow-hidden rounded-lg">
         <div class="px-4 py-5 sm:px-6">
-          <h2 class="title mb-4">
+          <h2 class="title mb-4 text-2xl lg:text-4xl">
             Skills & Experience
           </h2>
           <div class="flex flex-col lg:flex-row">
             <div class="flex-grow max-w-lg">
-              <h3 class="subtitle">
+              <h3 class="subtitle text-xl lg:text-3xl">
                 Technologies and tools I use
               </h3>
               <div class="grid grid-cols-3 md:grid-cols-4 mr-10">
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="flex-grow lg:border-l lg:pl-10 max-w-xl">
-              <h3 class="subtitle mt-10 lg:mt-0">
+              <h3 class="subtitle mt-10 lg:mt-0 text-xl lg:text-3xl">
                 I am experienced in
               </h3>
               <p>
@@ -64,16 +64,19 @@ export default {
 }
 .bg-image {
   background-image: url(~/assets/circuit-board.svg);
-  background-size: 20%;
+  background-size: 100%;
+}
+@media (min-width:640px) {
+  .bg-image {
+    background-size: 20%;
+  }
 }
 .title {
   color: #353F4B;
-  font-size:36px;
   font-weight:bold;
 }
 .subtitle {
   color: #243453;
-  font-size:29px;
   margin-bottom:14px;
 }
 .exp-list li {
