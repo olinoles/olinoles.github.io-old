@@ -1,17 +1,17 @@
 <template>
-  <div id="skills" class="pb-32 med-blue lg:pt-20 bg-image mx-auto w-full">
+  <div id="skills" class="pb-32 med-blue lg:pt-20 bg-image mx-auto p-5 w-full">
     <div class="mx-auto my-5 max-w-5xl relative">
-      <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+      <div class="bg-white shadow-xl overflow-hidden sm:rounded-lg">
         <div class="px-4 py-5 sm:px-6">
           <h2 class="title mb-4">
             Skills & Experience
           </h2>
-          <div class="flex">
+          <div class="flex flex-col lg:flex-row">
             <div class="flex-grow max-w-lg">
               <h3 class="subtitle">
                 Technologies and tools I use
               </h3>
-              <div class="grid grid-cols-4 mr-10">
+              <div class="grid grid-cols-3 md:grid-cols-4 mr-10">
                 <ToolIcon label="HTML5" icon="html.png" />
                 <ToolIcon label="Javascript ES6" icon="js.png" />
                 <ToolIcon label="CSS" icon="css.png" />
@@ -25,12 +25,12 @@
                 <ToolIcon label="Adobe Photoshop" icon="photoshop.png" />
               </div>
             </div>
-            <div class="flex-grow lg:border-l-2 lg:pl-10 max-w-xl">
-              <h3 class="subtitle">
+            <div class="flex-grow lg:border-l lg:pl-10 max-w-xl">
+              <h3 class="subtitle mt-10 lg:mt-0">
                 I am experienced in
               </h3>
               <p>
-                <ul class="list-disc list-inside leading-6 exp-list">
+                <ul class="list-disc list-outside ml-5 leading-6 exp-list">
                   <li>Developing <b>full-stack applications</b> using modern javascript frameworks</li>
                   <li>Developing with <b>Wordpress</b> CMS and <b>WooCommerce</b></li>
                   <li>Building <b>Visual Studio C#</b> desktop applications</li>
@@ -74,7 +74,7 @@ export default {
 .subtitle {
   color: #243453;
   font-size:29px;
-  margin-bottom:8px;
+  margin-bottom:14px;
 }
 .exp-list li {
   padding-bottom: 3px;
