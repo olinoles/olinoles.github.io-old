@@ -8,10 +8,11 @@
       class="h-14 w-auto mx-4 my-4"
       :src="`/portfolio/icons/${icon}`"
       alt=""
-    ><transition name="slide">
-      <p v-show="showTitle" class="absolute mx-auto text-center z-10 bg-gray-400 bg-opacity-80 text-blue-800 rounded-md p-1 font-bold text-sm">
+    >
+    <transition name="fade">
+      <div v-show="showTitle" class="absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
         {{ label }}
-      </p>
+      </div>
     </transition>
   </div>
 </template>
@@ -37,20 +38,18 @@ export default {
 </script>
 
 <style>
-.slide-enter-active {
-  animation: menu-slide .1s;
+.fade-enter-active {
+  animation: fade .1s;
 }
-.slide-leave-active {
-  animation: menu-slide .1s reverse;
+.fade-leave-active {
+  animation: fade .1s reverse;
 }
-@keyframes menu-slide {
+@keyframes fade {
   from {
     opacity: 0%;
-    transform: translatey(-10px);
   }
   to {
     opacity: 100%;
-    transform: translatey(0px);
   }
 }
 </style>
