@@ -50,7 +50,7 @@ export default {
   }
   to {
     opacity: 100%;
-    transform: translatex(0px);
+    transform: translatey(0px);
   }
 }
 </style>
