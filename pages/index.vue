@@ -1,5 +1,8 @@
 <template>
-  <div><about /></div>
+  <div>
+    <about />
+    <skills />
+  </div>
 </template>
 
 <script>

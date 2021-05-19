@@ -1,0 +1,85 @@
+<template>
+  <div id="skills" class="pb-32 med-blue lg:pt-20 bg-image">
+    <div class="lg:mx-72 md:mx-40 mx-5 my-5">
+      <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+        <div class="px-4 py-5 sm:px-6">
+          <h2 class="title mb-4">
+            Skills & Experience
+          </h2>
+          <div class="flex">
+            <div class="flex-grow max-w-lg">
+              <h3 class="subtitle">
+                Technologies and tools I use
+              </h3>
+              <div class="grid grid-cols-4 mr-10">
+                <ToolIcon label="HTML5" icon="html.png" />
+                <ToolIcon label="Javascript ES6" icon="js.png" />
+                <ToolIcon label="CSS" icon="css.png" />
+                <ToolIcon label="GraphQL" icon="graphql.png" />
+                <ToolIcon label="Nuxt JS" icon="nuxt.png" />
+                <ToolIcon label="Visual Studio C#" icon="visualstudio.png" />
+                <ToolIcon label="Wordpress" icon="wordpress.png" />
+                <ToolIcon label="Git" icon="git.png" />
+                <ToolIcon label="Vue JS" icon="vuejs.png" />
+                <ToolIcon label="Adobe Illustrator" icon="illustrator.png" />
+                <ToolIcon label="Adobe Photoshop" icon="photoshop.png" />
+              </div>
+            </div>
+            <div class="flex-grow lg:border-l-2 lg:pl-10 max-w-xl">
+              <h3 class="subtitle">
+                I am experienced in
+              </h3>
+              <p>
+                <ul class="list-disc list-inside leading-6 exp-list">
+                  <li>Developing <b>full-stack applications</b> using modern javascript frameworks</li>
+                  <li>Developing with <b>Wordpress</b> CMS and <b>WooCommerce</b></li>
+                  <li>Building <b>Visual Studio C#</b> desktop applications</li>
+                  <li>Integrating web & desktop applications with <b>RESTful API services</b></li>
+                  <li>Vector creation in <b>Adobe Illustrator</b></li>
+                  <li>Photo manipulation & colour correction in <b>Adobe Photoshop</b></li>
+                  <li>Code & project management using <b>Git</b></li>
+                  <li>Website performance analysis using <b>Google Analytics</b></li>
+                  <li>Marketing automation in <b>Klaviyo</b> & <b>Facebook Ads Manager</b></li>
+                  <ul />
+                </ul>
+              </p>
+              </di>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</template>
+
+<script>
+import ToolIcon from './ToolIcon.vue'
+export default {
+  components: { ToolIcon }
+
+}
+</script>
+<style scoped>
+.med-blue {
+  background-color: #335480
+}
+.bg-image {
+  background-image: url(~/assets/circuit-board.svg);
+  background-size: 20%;
+}
+.title {
+  color: #353F4B;
+  font-size:36px;
+  font-weight:bold;
+}
+.subtitle {
+  color: #243453;
+  font-size:29px;
+  margin-bottom:8px;
+}
+.exp-list li {
+  padding-bottom: 3px;
+  color:#243453;
+}
+</style>
