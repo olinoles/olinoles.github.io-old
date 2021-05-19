@@ -1,6 +1,9 @@
 export default {
 
   target: 'static',
+  static: {
+    prefix: 'portfolio/'
+  },
   router: {
     base: '/portfolio/'
   },
