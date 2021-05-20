@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-white">
+  <div class="sticky top-0 z-50 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -81,7 +81,7 @@ export default {
         {
           label: 'Projects',
           hasSubMenu: true,
-          path: { path: '/', hash: 'projects' },
+          path: { path: '', hash: '' },
           subItems: [{ label: 'ASColour Colourmatic', path: '/ascolour' },
             { label: '3D Drone Customiser', path: '/customiser' },
             { label: 'Order Dispatch System', path: '/dispatch' }
@@ -89,6 +89,12 @@ export default {
         },
         { label: 'Contact', path: { path: '/', hash: 'contact' } }
       ]
+    }
+  },
+  watch: {
+    '$route' () {
+      // this will close the mobile menu on page change
+      this.isMobileMenuOpen = false
     }
   }
 }
