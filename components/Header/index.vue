@@ -82,9 +82,9 @@ export default {
           label: 'Projects',
           hasSubMenu: true,
           path: { path: '/', hash: 'projects' },
-          subItems: [{ label: 'Project 1', path: '/project1' },
-            { label: 'Project 2', path: '/project2' },
-            { label: 'Project 3', path: '/project3' }
+          subItems: [{ label: 'ASColour Colourmatic', path: '/ascolour' },
+            { label: '3D Drone Customiser', path: '/customiser' },
+            { label: 'Order Dispatch System', path: '/dispatch' }
           ]
         },
         { label: 'Contact', path: { path: '/', hash: 'contact' } }
