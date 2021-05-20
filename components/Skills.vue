@@ -1,7 +1,7 @@
 <template>
   <div id="skills" class="pb-32 med-blue lg:pt-20 bg-image mx-auto p-5 w-full">
     <div class="mx-auto my-5 max-w-5xl relative">
-      <div class="bg-white shadow-xl overflow-hidden rounded-lg">
+      <div class="bg-white shadow-xl rounded-lg">
         <div class="px-4 py-5 sm:px-6">
           <h2 class="title mb-4 text-2xl lg:text-4xl">
             Skills & Experience
