@@ -1,5 +1,5 @@
 <template>
-  <div id="skills" class="pb-24 med-blue lg:pt-20 bg-image mx-auto p-5 w-full">
+  <div id="skills" class="pb-12 lg:pb-24 med-blue lg:pt-20 bg-image mx-auto p-5 w-full">
     <div class="mx-auto my-5 max-w-5xl relative">
       <div class="bg-white shadow-xl rounded-lg">
         <div class="px-4 py-5 sm:px-6">
@@ -30,7 +30,7 @@
                 I am experienced in
               </h3>
               <p>
-                <ul class="list-disc list-outside ml-5 leading-6 exp-list">
+                <ul class="list-disc list-outside ml-5 leading-6 exp-list space-y-3">
                   <li>Developing <b>full-stack applications</b> using modern javascript frameworks</li>
                   <li>Developing with <b>Wordpress</b> CMS and <b>WooCommerce</b></li>
                   <li>Building <b>Visual Studio C#</b> desktop applications</li>
@@ -80,7 +80,6 @@ export default {
   margin-bottom:14px;
 }
 .exp-list li {
-  padding-bottom: 3px;
   color:#243453;
 }
 </style>
