@@ -2,6 +2,8 @@
   <div
     class="relative mx-auto my-auto"
     @mouseover="showTitle = true"
+    @focus="showTitle = true"
+    @blur="showTitle = false"
     @mouseleave="showTitle = false"
   >
     <img
