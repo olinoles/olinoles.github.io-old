@@ -3,6 +3,7 @@
     <about />
     <skills />
     <projects />
+    <interests />
   </div>
 </template>
 
