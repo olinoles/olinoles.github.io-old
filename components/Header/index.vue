@@ -77,7 +77,6 @@ export default {
       isMobileMenuOpen: false,
       links: [{ label: 'About', path: { path: '/', hash: 'about' } },
         { label: 'Skills', path: { path: '/', hash: 'skills' } },
-        { label: 'Interests', path: { path: '/', hash: 'interests' } },
         {
           label: 'Projects',
           hasSubMenu: true,
@@ -87,6 +86,7 @@ export default {
             { label: 'Order Dispatch System', path: '/dispatch' }
           ]
         },
+        { label: 'Interests', path: { path: '/', hash: 'interests' } },
         { label: 'Contact', path: { path: '/', hash: 'contact' } }
       ]
     }
