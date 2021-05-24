@@ -9,13 +9,11 @@
     <img
       class="h-14 w-auto mx-4 my-4 transform duration-75 hover:scale-110"
       :src="`/portfolio/icons/${icon}`"
-      alt=""
+      :alt="label"
     >
-    <transition name="fade">
-      <div v-show="showTitle" class="pointer-events-none absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
-        {{ label }}
-      </div>
-    </transition>
+    <div :class="showTitle ? 'is-active':null" class="opacity-0 ointer-events-none absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
+      {{ label }}
+    </div>
   </div>
 </template>
 
@@ -40,18 +38,54 @@ export default {
 </script>
 
 <style>
-.fade-enter-active {
-  animation: fade .1s;
+.tooltip {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
 }
-.fade-leave-active {
-  animation: fade .1s reverse;
+
+.is-active {
+    -webkit-animation: pulse 200ms cubic-bezier(0,0,.2,1)forwards;
+    animation: pulse 200ms cubic-bezier(0,0,.2,1)forwards
 }
-@keyframes fade {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+
+    50% {
+        -webkit-transform: scale(.99);
+        transform: scale(.99)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+
+    50% {
+        -webkit-transform: scale(.99);
+        transform: scale(.99)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible
+    }
 }
 </style>
