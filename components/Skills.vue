@@ -11,7 +11,7 @@
               <h3 class="subtitle text-xl lg:text-3xl">
                 Technologies and tools I use
               </h3>
-              <div class="grid grid-cols-3 md:grid-cols-4 mr-10">
+              <div class="grid grid-cols-3 sm:grid-cols-4 mr-10">
                 <ToolIcon label="HTML5" icon="html.png" />
                 <ToolIcon label="Javascript ES6" icon="js.png" />
                 <ToolIcon label="CSS" icon="css.png" />
