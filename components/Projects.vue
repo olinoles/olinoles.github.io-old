@@ -1,5 +1,5 @@
 <template>
-  <div id="skills" class="pb-32 bg-light-blue lg:pt-20 bg-image mx-auto p-5 w-full">
+  <div id="projects" class="pb-10 bg-light-blue lg:pt-20 bg-image mx-auto p-5 w-full">
     <div class="mx-auto my-5 max-w-5xl relative lg:pl-6">
       <h2 class="title mb-10 text-2xl lg:text-4xl">
         Featured Projects
@@ -21,7 +21,7 @@ Built using Babylon.js framework and React."
         link="customiser"
         image="customiser.jpg"
       />
-      <ProjectSummary title="KiwiQuads Order Dispatch System" description="KiwiQuads needed a dispatching system to handle a large quantity of orders efficiently. I built this web application to combine order picking with NZ Posts API for shipping." link="dispatch" image="dispatch.jpg" />
+      <ProjectSummary title="KiwiQuads Order Dispatch System" description="KiwiQuads needed a dispatching system to handle a large quantity of orders efficiently. I built this web application to combine order picking with the NZ Post API for shipping." link="dispatch" image="dispatch.jpg" />
     </div>
   </div>
 </template>

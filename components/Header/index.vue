@@ -1,7 +1,7 @@
 <template>
-  <div class="relative bg-white">
+  <div class="sticky top-0 z-50 bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+      <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="#">
             <span class="sr-only">Workflow</span>
@@ -77,18 +77,24 @@ export default {
       isMobileMenuOpen: false,
       links: [{ label: 'About', path: { path: '/', hash: 'about' } },
         { label: 'Skills', path: { path: '/', hash: 'skills' } },
-        { label: 'Interests', path: { path: '/', hash: 'interests' } },
         {
           label: 'Projects',
           hasSubMenu: true,
-          path: { path: '/', hash: 'projects' },
+          path: { path: '', hash: '' },
           subItems: [{ label: 'ASColour Colourmatic', path: '/ascolour' },
             { label: '3D Drone Customiser', path: '/customiser' },
             { label: 'Order Dispatch System', path: '/dispatch' }
           ]
         },
+        { label: 'Interests', path: { path: '/', hash: 'interests' } },
         { label: 'Contact', path: { path: '/', hash: 'contact' } }
       ]
+    }
+  },
+  watch: {
+    '$route' () {
+      // this will close the mobile menu on page change
+      this.isMobileMenuOpen = false
     }
   }
 }

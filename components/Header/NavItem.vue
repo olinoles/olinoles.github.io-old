@@ -1,7 +1,7 @@
 <template>
   <div v-if="hasSubMenu && subMenuItems" class="relative">
     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-    <a href="#" class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false" @click="isOpen = !isOpen">
+    <a class="cursor-pointer text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false" @click="isOpen = !isOpen">
       <span>{{ label }}</span>
       <!-- Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
@@ -50,6 +50,12 @@ export default {
   data () {
     return {
       isOpen: false
+    }
+  },
+  watch: {
+    '$route' () {
+      // this will close the mobile menu on page change
+      this.isOpen = false
     }
   }
 }

@@ -2,15 +2,17 @@
   <div
     class="relative mx-auto my-auto"
     @mouseover="showTitle = true"
+    @focus="showTitle = true"
+    @blur="showTitle = false"
     @mouseleave="showTitle = false"
   >
     <img
-      class="h-14 w-auto mx-4 my-4"
+      class="h-14 w-auto mx-4 my-4 transform duration-75 hover:scale-110"
       :src="`/portfolio/icons/${icon}`"
       alt=""
     >
     <transition name="fade">
-      <div v-show="showTitle" class="absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
+      <div v-show="showTitle" class="pointer-events-none absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
         {{ label }}
       </div>
     </transition>
