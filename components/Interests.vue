@@ -32,12 +32,12 @@
             <InterestsElectronics v-if="selectedID==1" />
             <InterestsFPVRacingDrones v-if="selectedID==2" />
             <InterestsArcadeMachines v-if="selectedID==3" />
-            <div id="interests-nav" class="m-3 mt-6 cursor-pointer">
-              <ChevronLeftIcon class="inline-block w-10 mr-2 h-auto bg-gray-200 text-gray-600 active:bg-gray-300 rounded-md" @click="cycleInterests(-1)" />
-              <ChevronRightIcon class="inline-block w-10 ml-2 h-auto bg-gray-200 text-gray-600 active:bg-gray-300 rounded-md" @click="cycleInterests(1)" />
-            </div>
           </div>
         </div>
+      </div>
+      <div id="interests-nav" class="m-3 mt-6 cursor-pointer sm:hidden">
+        <ChevronLeftIcon class="inline-block w-10 mr-2 h-auto bg-gray-200 text-gray-600 active:bg-gray-300 rounded-md" @click="cycleInterests(-1)" />
+        <ChevronRightIcon class="inline-block w-10 ml-2 h-auto bg-gray-200 text-gray-600 active:bg-gray-300 rounded-md" @click="cycleInterests(1)" />
       </div>
     </div>
   </div>
