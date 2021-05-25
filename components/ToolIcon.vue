@@ -11,7 +11,7 @@
       :src="`/portfolio/icons/${icon}`"
       :alt="label"
     >
-    <div :class="showTitle ? 'is-active':null" class="opacity-0 ointer-events-none absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
+    <div :class="showTitle ? 'is-active':null" class="opacity-0 pointer-events-none absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
       {{ label }}
     </div>
   </div>
