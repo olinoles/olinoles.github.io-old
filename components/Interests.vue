@@ -31,7 +31,8 @@
             <Interests3DPrinting v-if="selectedID==0" />
             <InterestsElectronics v-if="selectedID==1" />
             <InterestsFPVRacingDrones v-if="selectedID==2" />
-            <InterestsArcadeMachines v-if="selectedID==3" />
+            <InterestsCAD v-if="selectedID==3" />
+            <InterestsArcadeMachines v-if="selectedID==4" />
           </div>
         </div>
       </div>
@@ -57,8 +58,8 @@ export default {
         { id: 0, label: '3D Printing', icon: '3dprinter.svg' },
         { id: 1, label: 'Electronics', icon: 'electronics.svg' },
         { id: 2, label: 'FPV Racing Drones', icon: 'drone.svg' },
-        { id: 3, label: 'Arcade Machines', icon: 'joystick.svg' },
-        { id: 4, label: 'CAD Modelling', icon: 'cad.svg' }
+        { id: 3, label: 'CAD Modelling', icon: 'cad.svg' },
+        { id: 4, label: 'Arcade Machines', icon: 'joystick.svg' }
       ]
     }
   },
