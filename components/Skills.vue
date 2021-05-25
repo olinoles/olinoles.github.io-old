@@ -29,20 +29,18 @@
               <h3 class="subtitle mt-10 lg:mt-0 text-xl lg:text-3xl">
                 I am experienced in
               </h3>
-              <p>
-                <ul class="list-disc list-outside ml-5 leading-6 exp-list space-y-3">
-                  <li>Developing <b>full-stack applications</b> using modern javascript frameworks</li>
-                  <li>Developing with <b>Wordpress</b> CMS and <b>WooCommerce</b></li>
-                  <li>Building <b>Visual Studio C#</b> desktop applications</li>
-                  <li>Integrating web & desktop applications with <b>RESTful API services</b></li>
-                  <li>Vector creation in <b>Adobe Illustrator</b></li>
-                  <li>Photo manipulation & colour correction in <b>Adobe Photoshop</b></li>
-                  <li>Code & project management using <b>Git</b></li>
-                  <li>Website performance analysis using <b>Google Analytics</b></li>
-                  <li>Marketing automation in <b>Klaviyo</b> & <b>Facebook Ads Manager</b></li>
-                  <ul />
-                </ul>
-              </p>
+              <ul class="list-disc list-outside ml-5 leading-6 exp-list space-y-3">
+                <li>Developing <b>full-stack applications</b> using modern javascript frameworks</li>
+                <li>Developing with <b>Wordpress</b> CMS and <b>WooCommerce</b></li>
+                <li>Building <b>Visual Studio C#</b> desktop applications</li>
+                <li>Integrating web & desktop applications with <b>RESTful API services</b></li>
+                <li>Vector creation in <b>Adobe Illustrator</b></li>
+                <li>Photo manipulation & colour correction in <b>Adobe Photoshop</b></li>
+                <li>Code & project management using <b>Git</b></li>
+                <li>Website performance analysis using <b>Google Analytics</b></li>
+                <li>Marketing automation in <b>Klaviyo</b> & <b>Facebook Ads Manager</b></li>
+                <ul />
+              </ul>
             </div>
           </div>
         </div>
