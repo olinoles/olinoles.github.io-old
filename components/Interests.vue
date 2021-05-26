@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-32 bg-light-blue bg-image mx-auto p-5 w-full overflow-hidden">
+  <div class="pb-16 bg-light-blue bg-image mx-auto p-5 w-full overflow-hidden">
     <div class="mx-auto my-5 max-w-5xl relative lg:pl-6">
       <h2 id="interests" class="title mb-10 text-2xl lg:text-4xl">
         Interests
