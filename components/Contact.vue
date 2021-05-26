@@ -39,7 +39,7 @@
               </li>
               <li class="text-white text-2xl">
                 <UsersIcon class="social-icon" />
-                <a rel="noreferrer" target="_blank" href="https://www.facebook.com/olinoles/">On Facebook</a>
+                <a rel="noreferrer" target="_blank" href="https://www.facebook.com/oliver.noles/">On Facebook</a>
               </li>
             </ul>
           </div>
