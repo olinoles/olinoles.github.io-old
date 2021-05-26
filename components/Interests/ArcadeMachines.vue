@@ -5,7 +5,7 @@
       <br><br>
       The picture to the right is the final product. I sketched and designed the machine in CAD software prior to building. The control panel was laser cut and features graphics I designed, which are inspired from the SNK Neo Geo.
     </p>
-    <img class="w-64 max-h-64 h-auto shadow-lg rounded-md" src="~/static/images/arcade.jpg">
+    <img class="w-64 max-h-64 h-auto shadow-lg rounded-md" alt="Arcade machine" src="~/static/images/arcade.jpg">
   </div>
 </template>
 

@@ -2,7 +2,7 @@
   <div class="flex justify-start">
     <nuxt-link :to="`projects/` + link">
       <div class="flex flex-col sm:flex-row bg-white w-auto hover:shadow-md shadow-sm rounded-lg overflow-hidden mb-12 cursor-pointer">
-        <img :src="`/projects/${image}`" class="w-auto sm:h-auto sm:w-72">
+        <img :alt="image" :src="`/projects/${image}`" class="w-auto sm:h-auto sm:w-72">
         <div class="flex flex-col ml-10">
           <div class="text-xl my-4">
             {{ title }}
