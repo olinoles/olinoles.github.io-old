@@ -8,18 +8,18 @@
       height="100"
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
-      class="bg-curve"
+      class="bg-curve h-10 sm:h-32"
     >
       <path d="M 0 100 C 51 93 51 6 100 100 Z" />
     </svg>
     <div class="pb-12 bg-darkblue bg-image mx-auto p-5 w-full overflow-hidden">
       <div class="mx-auto my-5 max-w-5xl relative lg:pl-6">
-        <div class="flex">
-          <div>
-            <h2 id="contact" class="font-bold text-white mb-10 mt-5 mr-56 text-2xl lg:text-4xl">
+        <div class="flex flex-col sm:flex-row">
+          <div class="sm:mr-56">
+            <h2 id="contact" class="font-bold text-white mb-10 mt-5 text-3xl sm:text-4xl">
               Let's work together!
             </h2>
-            <h3 class="font-bold text-gray-200 mb-10 mr-56 text-xl lg:text-2xl">
+            <h3 class="font-bold text-gray-200 mb-10 text-xl lg:text-2xl">
               Have a project you'd like to discuss?
             </h3>
           </div>
