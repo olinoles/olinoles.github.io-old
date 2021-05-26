@@ -15,7 +15,7 @@
     <div class="pb-12 bg-darkblue bg-image mx-auto p-5 w-full overflow-hidden">
       <div class="mx-auto my-5 max-w-5xl relative lg:pl-6">
         <div class="flex flex-col sm:flex-row">
-          <div class="sm:mr-56">
+          <div class="sm:mr-24 md:mr-56">
             <h2 id="contact" class="font-bold text-white mb-10 mt-5 text-3xl sm:text-4xl">
               Let's work together!
             </h2>
