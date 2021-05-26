@@ -39,20 +39,22 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics', {
-      id: 'G-QX5T8FW35X'
-    }
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/google-analytics'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  googleAnalytics: {
+    id: 'G-QX5T8FW35X'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
