@@ -16,7 +16,8 @@ export default {
   components: { About, Projects, Contact },
   head () {
     return {
-      title: 'Oliver Noles'
+      title: 'Oliver Noles',
+      description: 'Oliver Noles Portfolio. Full-stack web developer.'
     }
   }
 }
