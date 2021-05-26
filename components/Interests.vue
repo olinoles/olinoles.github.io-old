@@ -1,7 +1,7 @@
 <template>
-  <div id="interests" class="pb-32 bg-light-blue bg-image mx-auto p-5 w-full overflow-hidden">
+  <div class="pb-32 bg-light-blue bg-image mx-auto p-5 w-full overflow-hidden">
     <div class="mx-auto my-5 max-w-5xl relative lg:pl-6">
-      <h2 class="title mb-10 text-2xl lg:text-4xl">
+      <h2 id="interests" class="title mb-10 text-2xl lg:text-4xl">
         Interests
       </h2>
       <div class="bg-white w-auto shadow-sm rounded-lg mb-8">

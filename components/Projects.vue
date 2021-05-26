@@ -1,7 +1,7 @@
 <template>
-  <div id="projects" class="pb-10 bg-light-blue lg:pt-20 bg-image mx-auto p-5 w-full">
+  <div class="pb-10 bg-light-blue lg:pt-20 bg-image mx-auto p-5 w-full">
     <div class="mx-auto my-5 max-w-5xl relative lg:pl-6">
-      <h2 class="title mb-10 text-2xl lg:text-4xl">
+      <h2 id="projects" class="title mb-10 text-2xl lg:text-4xl">
         Featured Projects
       </h2>
       <ProjectSummary
