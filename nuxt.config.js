@@ -5,7 +5,7 @@ export default {
     base: '/portfolio/'
   },
   static: {
-    prefix: 'portfolio'
+    prefix: false
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
