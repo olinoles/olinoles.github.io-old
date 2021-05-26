@@ -53,7 +53,7 @@ export default {
   axios: {},
 
   googleAnalytics: {
-    id: 'G-QX5T8FW35X'
+    id: 'UA-198012738-1'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
