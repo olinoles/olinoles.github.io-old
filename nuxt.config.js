@@ -2,7 +2,7 @@ export default {
 
   target: 'static',
   router: {
-    base: '/portfolio/'
+    base: '/'
   },
   static: {
     prefix: false
