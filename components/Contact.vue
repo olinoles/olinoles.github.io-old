@@ -8,9 +8,9 @@
       height="100"
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
-      class="bg-curve h-10 sm:h-32"
+      class="bg-curve h-16 sm:h-32 -mb-px"
     >
-      <path d="M 0 100 C 51 93 51 6 100 100 Z" />
+      <path stroke-width="6" d="M 0 100 C 51 93 51 6 100 100 Z" />
     </svg>
     <div class="pb-12 bg-darkblue bg-image mx-auto p-5 w-full overflow-hidden">
       <div class="mx-auto my-5 max-w-5xl relative lg:pl-6">
@@ -73,5 +73,6 @@ export default {
 }
 .bg-curve {
   fill: #14213D;
+  stroke: #14213D;
 }
 </style>
