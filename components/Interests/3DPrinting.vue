@@ -5,7 +5,7 @@
       <br><br>
       I'm now the proud owner of two Prusa Mk3S printers, which get heavily used!
     </p>
-    <img class="w-64 max-h-64 h-auto shadow-lg rounded-md" src="~/static/images/prusa.jpg">
+    <img class="w-64 max-h-64 h-auto shadow-lg rounded-md" alt="Prusa Mk3S Printer" src="~/static/images/prusa.jpg">
   </div>
 </template>
 

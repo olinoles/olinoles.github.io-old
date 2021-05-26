@@ -1,6 +1,6 @@
 <template>
   <div class="pl-2 pr-14 py-2 my-2 rounded-lg item cursor-pointer">
-    <img :src="`/icons/interests/${icon}`" class="h-8 w-auto inline-block">
+    <img :src="`/icons/interests/${icon}`" :alt="label" class="h-8 w-auto inline-block">
     <div class="inline-block ml-3">
       {{ label }}
     </div>

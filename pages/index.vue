@@ -12,7 +12,15 @@
 import About from '~/components/About.vue'
 import Contact from '~/components/Contact.vue'
 import Projects from '~/components/Projects.vue'
-export default { components: { About, Projects, Contact } }
+export default {
+  components: { About, Projects, Contact },
+  head () {
+    return {
+      title: 'Oliver Noles',
+      description: 'Oliver Noles Portfolio. Full-stack web developer.'
+    }
+  }
+}
 </script>
 
 <style>
