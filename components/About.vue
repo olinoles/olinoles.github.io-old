@@ -1,8 +1,8 @@
 <template>
   <div id="about" class="pb-4 lg:pb-10 bg-darkblue">
     <div class="mt-4 right-4 space-x-3 hidden sm:inline absolute">
-      <a href="https://github.com/olinoles" target="_blank"><img src="/portfolio/icons/github.svg" class="inline-block h-8 w-auto hover:scale-110 transform duration-75 cursor-pointer opacity-70 hover:opacity-100"></a>
-      <a href="https://www.linkedin.com/in/oliver-noles-2390a8178/" target="_blank"><img src="/portfolio/icons/linkedin.svg" class="inline-block h-8 w-auto hover:scale-110 transform duration-75 cursor-pointer opacity-70 hover:opacity-100"></a>
+      <a href="https://github.com/olinoles" target="_blank"><img src="/icons/github.svg" class="inline-block h-8 w-auto hover:scale-110 transform duration-75 cursor-pointer opacity-70 hover:opacity-100"></a>
+      <a href="https://www.linkedin.com/in/oliver-noles-2390a8178/" target="_blank"><img src="/icons/linkedin.svg" class="inline-block h-8 w-auto hover:scale-110 transform duration-75 cursor-pointer opacity-70 hover:opacity-100"></a>
     </div>
     <div class="flex justify-center flex-col md:flex-row mx-auto lg:flex-row">
       <div class="inline-block max-w-xl lg:py-20 px-4 py-8 sm:px-6 lg:px-8">

@@ -8,7 +8,7 @@
   >
     <img
       class="h-14 w-auto mx-4 my-4 transform duration-75 hover:scale-110"
-      :src="`/portfolio/icons/${icon}`"
+      :src="`/icons/${icon}`"
       :alt="label"
     >
     <div :class="showTitle ? 'is-active':null" class="opacity-0 pointer-events-none absolute left-0 right-0 mx-auto text-center z-10 bg-gray-800 bg-opacity-80 text-white rounded-md p-1 font-bold text-xs">
