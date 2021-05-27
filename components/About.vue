@@ -34,7 +34,6 @@
       <ChevronDownIcon class="text-white text-xl mx-auto h-8 w-8 mt-8" />
     </a>
   </div>
-  </div>
 </template>
 
 <script>
