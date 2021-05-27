@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="header-bg" class="max-w-5xl mx-auto h-56 object-cover bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white text-5xl font-semibold pl-10 flex items-center">
+    <div id="header-bg" class="select-none max-w-5xl mx-auto h-56 object-cover bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white text-5xl font-semibold pl-10 flex items-center">
       AS COLOURMATIC
     </div>
     <div class="flex mx-auto my-5 max-w-5xl relative">
