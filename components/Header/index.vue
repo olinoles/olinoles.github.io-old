@@ -74,7 +74,7 @@ export default {
   data () {
     return {
       isMobileMenuOpen: false,
-      links: [{ label: 'About', path: { path: '/', hash: 'about' } },
+      links: [{ label: 'About', path: { path: '/', hash: '' } },
         { label: 'Skills', path: { path: '/', hash: 'skills' } },
         {
           label: 'Projects',
