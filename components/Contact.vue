@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-lightblue">
+  <div class="parent">
     <svg
       id="curveUpColor"
       xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +68,8 @@ export default {
 .bg-darkblue {
   background-color: #14213D;
 }
-.bg-lightblue {
-  background-color: #F2F9FF;
+.parent {
+  margin-top:-130px;
 }
 .bg-curve {
   fill: #14213D;
