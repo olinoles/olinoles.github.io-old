@@ -11,9 +11,18 @@
         </h2>
         <p class="mt-6 max-w-3xl text-xl text-gray-300">
           I'm an Auckland-based tech enthusiast experienced in web technologies, creative projects, and UI design.
-        </p><p class="mt-6 max-w-3xl text-xl text-gray-300">
+          <br><br>
           I am most interested in full-stack development and enjoy working with both front-end and back-end tools. Outside of webdev, I enjoy hobbies that involve robotics and electronics, including 3D printing, building FPV Drones and CAD design.
         </p>
+        <div id="read-more">
+          <p class="mt-6 max-w-3xl text-xl text-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div id="read-more-button" class="mt-3 text-xl text-gray-300 underline cursor-pointer" @click="slideDown()">
+          {{ isReadMoreOpen ? "Read less" : "Read more" }}
+        </div>
       </div>
       <img
         class="mt-8 lg:mt-24 lg:h-80 lg:w-80 w-52 h-52 mx-auto lg:mx-20  rounded-full ring-4 ring-gray-600 ring-opacity-50"
@@ -33,6 +42,22 @@ import { ChevronDownIcon } from '@vue-hero-icons/solid'
 export default {
   components: {
     ChevronDownIcon
+  },
+  data () {
+    return {
+      isReadMoreOpen: false
+    }
+  },
+  methods: {
+    slideDown () {
+      const element = document.querySelector('#read-more')
+      if (!this.isReadMoreOpen) {
+        element.style.height = `${element.scrollHeight}px`
+      } else {
+        element.style.height = 0
+      }
+      this.isReadMoreOpen = !this.isReadMoreOpen
+    }
   }
 }
 </script>
@@ -40,5 +65,11 @@ export default {
 <style scoped>
 .bg-darkblue {
   background-color: #14213D;
+}
+
+#read-more {
+  transition:height 0.5s ease-out;
+    height:0;
+    overflow:hidden;
 }
 </style>
