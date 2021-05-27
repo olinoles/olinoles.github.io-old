@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-12 lg:pb-24 med-blue lg:pt-20 bg-image mx-auto p-5 w-full">
+  <div class="pb-12 lg:pb-24 med-blue lg:pt-20 bg-image mx-auto p-5 w-full overflow-hidden">
     <div class="mx-auto my-5 max-w-5xl relative">
       <div class="bg-white shadow-xl rounded-lg">
         <div class="px-4 py-5 sm:px-6">

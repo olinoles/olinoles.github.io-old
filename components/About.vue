@@ -30,8 +30,8 @@
         alt=""
       >
     </div>
-    <a href="#skills">
-      <ChevronDownIcon class="text-white text-xl mx-auto h-8 w-8 mt-8 z-10" />
+    <a href="#skills" class="pointer-cursor w-10 mx-auto block">
+      <ChevronDownIcon class="text-white text-xl mx-auto h-8 w-8 mt-8" />
     </a>
   </div>
 </template>
