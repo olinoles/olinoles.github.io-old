@@ -4,7 +4,7 @@
       AS COLOURMATIC
     </div>
     <div class="flex flex-col sm:flex-row mx-auto my-5 max-w-5xl relative">
-      <div id="summary" class="flex-shrink-0 border-b-2 mx-5 sm:mx-0 sm:border-r-2 border-gray-300 pr-10 pl-5 sm:pl-10 pb-5 sm:py-5">
+      <div id="summary" class="flex-shrink-0 border-b-2 mx-5 sm:mx-0 sm:border-b-0 sm:border-r-2 border-gray-300 pr-10 pl-5 sm:pl-10 pb-5 sm:py-5">
         <img
           src="~/static/images/colourmatic-logo.jpg"
           class="w-full h-auto mb-12 hidden sm:block"
@@ -25,13 +25,14 @@
         <p>Adobe ActionScript</p>
       </div>
       <div id="content" class="px-10 pb-5">
-        <iframe
-          src="https://player.vimeo.com/video/312834441"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-          class="py-2 sm:hidden"
-        />
+        <div class="iframe-container sm:hidden">
+          <iframe
+            id="iframe2"
+            src="https://player.vimeo.com/video/312834441"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+          />
+        </div>
         <h3>
           Goal
         </h3>
@@ -43,7 +44,7 @@
         </h3>
         <p>
           I was chosen to work on this project for my experience using Adobe Animate and ActionScript. I worked closely with another developer to build a front and back-end system that would provide a fun experience for the users.
-          <br><br><img class="w-full h-auto sm:h-44 sm:m-5 sm:mr-0" align="right" src="~/static/images/kinect.jpg">
+          <br><br><img class="w-full h-auto sm:w-auto sm:h-44 sm:m-5 sm:mr-0" align="right" src="~/static/images/kinect.jpg">
           We used an Xbox Kinect system to track users limb movements, then map it into the back-end through the Kinect SDK. The triggers were then sent to the front-end to advance the animations on-screen. I was responsible for the developing the user-friendly front-end application and integrating it with our C# Kinect application running behind the scenes.
         </p>
         <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-2.jpg">
@@ -56,15 +57,14 @@
           <br><br>
           The second challenge we experienced was the difficulty in accurately isolating the users t-shirt colour, to provide them their complimentary colour and recommendation. The outdoor lighting on the street also made it difficult for the camera to see colour on the user's clothing. We overcame this by building filters which compensate for the overall image lighting and enhanced saturation and brightness of the subject. The t-shirt colour was isolated by taking an average colour of the space surrounding the Kinect skeleton.
         </p>
-        <iframe
-          src="https://player.vimeo.com/video/312834441"
-          width="640"
-          height="360"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-          class="my-10 hidden sm:block"
-        />
+        <div class="iframe-container hidden sm:block">
+          <iframe
+            id="iframe2"
+            src="https://player.vimeo.com/video/312834441"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+          />
+        </div>
         <h3>
           Conclusion
         </h3>
@@ -111,5 +111,20 @@ export default {
     margin-top: 1.25rem;
     margin-bottom:0.75rem;
 }
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+}
 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   padding:10px;
+}
 </style>
