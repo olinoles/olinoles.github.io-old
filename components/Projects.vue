@@ -9,7 +9,7 @@
         cta="Watch Video"
         cta-link="https://vimeo.com/312834441"
         description="This creative project for ASColour used a camera and visuals to recommend t-shirts to customers. The display was featured outside the Customs Street store in Auckland CBD."
-        link="ascolour"
+        link="ascolour/"
         image="ascolour.png"
       />
       <ProjectSummary
@@ -18,10 +18,10 @@
         cta-link="https://kiwiquads.co.nz/customiser"
         description="A 3D drone customiser tool built for KiwiQuads allows real-time customisation of a drone to visualise different components and colours.
 Built using Babylon.js framework and React."
-        link="customiser"
+        link="customiser/"
         image="customiser.jpg"
       />
-      <ProjectSummary title="KiwiQuads Order Dispatch System" description="KiwiQuads needed a dispatching system to handle a large quantity of orders efficiently. I built this web application to combine order picking with the NZ Post API for shipping." link="dispatch" image="dispatch.jpg" />
+      <ProjectSummary title="KiwiQuads Order Dispatch System" description="KiwiQuads needed a dispatching system to handle a large quantity of orders efficiently. I built this web application to combine order picking with the NZ Post API for shipping." link="dispatch/" image="dispatch.jpg" />
     </div>
   </div>
 </template>
