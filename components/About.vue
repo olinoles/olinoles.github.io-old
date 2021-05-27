@@ -14,9 +14,9 @@
           <br><br>
           I am most interested in full-stack development and enjoy working with both front-end and back-end tools. Outside of webdev, I enjoy hobbies that involve robotics and electronics, including 3D printing, building FPV Drones and CAD design.
         </p>
-        <div id="read-more">
+        <div id="read-more" class="transition-height duration-300 ease-out overflow-hidden">
           <p class="mt-6 max-w-3xl text-xl text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            My favourite projects currently involve developing clean and functional front-end software, but I'm not afraid of working on back-end applications either. My philosophy towards coding is <i>the right tool for the job</i>. Having a strong passion for learning new tools allows me to solve problems efficiently.<br><br>When I'm not working on projects I love to socialise with board games, try new craft beers, and travel.
           </p>
         </div>
 
@@ -64,11 +64,5 @@ export default {
 <style scoped>
 .bg-darkblue {
   background-color: #14213D;
-}
-
-#read-more {
-  transition:height 0.3s ease-out;
-    height:0;
-    overflow:hidden;
 }
 </style>
