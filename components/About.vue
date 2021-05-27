@@ -5,7 +5,7 @@
       <a href="https://www.linkedin.com/in/oliver-noles-2390a8178/" target="_blank"><img alt="LinkedIn" src="/icons/linkedin.svg" class="inline-block h-8 w-auto hover:scale-110 transform duration-75 cursor-pointer opacity-70 hover:opacity-100"></a>
     </div>
     <div class="flex justify-center flex-col md:flex-row mx-auto lg:flex-row">
-      <div class="inline-block max-w-xl lg:py-20 px-4 py-8 sm:px-6 lg:px-8">
+      <div class="inline-block max-w-xl lg:pt-20 pb-16 px-4 py-8 sm:px-6 lg:px-8">
         <h2 id="about" class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
           Hi, I'm Oliver
         </h2>
@@ -20,7 +20,7 @@
           </p>
         </div>
 
-        <div id="read-more-button" class="mt-3 text-xl text-gray-300 underline cursor-pointer" @click="slideDown()">
+        <div class="mt-3 text-xl text-gray-300 underline cursor-pointer" @click="slideDown()">
           {{ isReadMoreOpen ? "Read less" : "Read more" }}
         </div>
       </div>
@@ -31,7 +31,7 @@
       >
     </div>
     <a href="#skills">
-      <ChevronDownIcon class="text-white text-xl mx-auto h-8 w-8 mt-8" />
+      <ChevronDownIcon class="text-white text-xl mx-auto h-8 w-8 mt-8 z-10" />
     </a>
   </div>
 </template>
@@ -67,7 +67,7 @@ export default {
 }
 
 #read-more {
-  transition:height 0.5s ease-out;
+  transition:height 0.3s ease-out;
     height:0;
     overflow:hidden;
 }
