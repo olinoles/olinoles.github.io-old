@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div id="header-bg" class="select-none max-w-5xl mx-auto h-56 object-cover bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white text-5xl font-semibold pl-10 flex items-center">
+    <div id="header-bg" class="select-none max-w-5xl mx-auto h-32 sm:h-56 object-cover bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white text-4xl sm:text-5xl font-semibold pl-10 flex items-center">
       AS COLOURMATIC
     </div>
-    <div class="flex mx-auto my-5 max-w-5xl relative">
-      <div id="summary" class="flex-shrink-0 border-r-2 border-gray-300 pr-10 pl-10 py-5">
+    <div class="flex flex-col sm:flex-row mx-auto my-5 max-w-5xl relative">
+      <div id="summary" class="flex-shrink-0 border-b-2 mx-5 sm:mx-0 sm:border-r-2 border-gray-300 pr-10 pl-5 sm:pl-10 pb-5 sm:py-5">
         <img
           src="~/static/images/colourmatic-logo.jpg"
-          class="w-full h-auto mb-12"
+          class="w-full h-auto mb-12 hidden sm:block"
         >
         <h3>
           Case Study
@@ -25,6 +25,13 @@
         <p>Adobe ActionScript</p>
       </div>
       <div id="content" class="px-10 pb-5">
+        <iframe
+          src="https://player.vimeo.com/video/312834441"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          class="py-2 sm:hidden"
+        />
         <h3>
           Goal
         </h3>
@@ -36,9 +43,10 @@
         </h3>
         <p>
           I was chosen to work on this project for my experience using Adobe Animate and ActionScript. I worked closely with another developer to build a front and back-end system that would provide a fun experience for the users.
-          <br><br><img class="h-44 m-5 mr-0" align="right" src="~/static/images/kinect.jpg">
+          <br><br><img class="w-full h-auto sm:h-44 sm:m-5 sm:mr-0" align="right" src="~/static/images/kinect.jpg">
           We used an Xbox Kinect system to track users limb movements, then map it into the back-end through the Kinect SDK. The triggers were then sent to the front-end to advance the animations on-screen. I was responsible for the developing the user-friendly front-end application and integrating it with our C# Kinect application running behind the scenes.
         </p>
+        <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-2.jpg">
 
         <h3>
           Challenges
@@ -55,7 +63,7 @@
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
-          class="my-10"
+          class="my-10 hidden sm:block"
         />
         <h3>
           Conclusion
@@ -63,6 +71,7 @@
         <p>
           I had a great time working with a new team on this project and learnt a lot during the development. AS Colour was a great brand to develop this project for and gave us a lot of creative freedom in the final product.
         </p>
+        <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-3.jpg">
       </div>
     </div>
   </div>
@@ -102,4 +111,5 @@ export default {
     margin-top: 1.25rem;
     margin-bottom:0.75rem;
 }
+
 </style>
