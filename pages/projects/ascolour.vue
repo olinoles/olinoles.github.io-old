@@ -25,14 +25,6 @@
         <p>Adobe ActionScript</p>
       </div>
       <div id="content" class="px-10 pb-5">
-        <div class="iframe-container sm:hidden">
-          <iframe
-            id="iframe2"
-            src="https://player.vimeo.com/video/312834441"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-          />
-        </div>
         <h3>
           Goal
         </h3>
@@ -40,15 +32,35 @@
           To produce a fun and interactive display to inspire customers to make new clothing choices.
         </p>
         <h3>
+          What is the AS Colourmatic?
+        </h3>
+        <div class="iframe-container my-5 sm:my-3">
+          <iframe
+            id="iframe2"
+            src="https://player.vimeo.com/video/312834441"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+          />
+        </div>
+        <p>
+          The above video describes this project really well, but in case you can't watch it: The AS Colourmatic is an interactive storefront display designed to analyse the user's clothing colour choices and prescribe them a complimentary 'better colour'.
+        </p>
+        <h3>
           My Experience
         </h3>
         <p>
           I was chosen to work on this project for my experience using Adobe Animate and ActionScript. I worked closely with another developer to build a front and back-end system that would provide a fun experience for the users.
-          <br><br><img class="w-full h-auto sm:w-auto sm:h-44 sm:m-5 sm:mr-0" align="right" src="~/static/images/kinect.jpg">
-          We used an Xbox Kinect system to track users limb movements, then map it into the back-end through the Kinect SDK. The triggers were then sent to the front-end to advance the animations on-screen. I was responsible for the developing the user-friendly front-end application and integrating it with our C# Kinect application running behind the scenes.
+          <br><br>
+          I was responsible for the developing the user-friendly front-end application and integrating it with our C# Kinect application running behind the scenes.
+        </p>
+        <h3>
+          Technical Specifications
+        </h3>
+        <p>
+          <img class="w-full h-auto sm:w-auto sm:h-44 sm:m-5 sm:mr-0" align="right" src="~/static/images/kinect.jpg">
+          The Colourmatic project uses the Xbox Kinect sensor along with the <a class="" href="https://www.microsoft.com/en-nz/download/details.aspx?id=40278" rel="noreferrer">Kinect SDK</a> to track users and build a colour profile from the RGB camera on-board. We wrote an algorithm to take the colour average of the user's t-shirt, match it to a known hue, then use design patterns to provide a complimentary colour. The processing is done in the background C# application, which relays information to the front-end built in Adobe Animate in real-time. We built event handlers in the front-end which advance the animations and communicate information when called.
         </p>
         <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-2.jpg">
-
         <h3>
           Challenges
         </h3>
@@ -57,14 +69,6 @@
           <br><br>
           The second challenge we experienced was the difficulty in accurately isolating the users t-shirt colour, to provide them their complimentary colour and recommendation. The outdoor lighting on the street also made it difficult for the camera to see colour on the user's clothing. We overcame this by building filters which compensate for the overall image lighting and enhanced saturation and brightness of the subject. The t-shirt colour was isolated by taking an average colour of the space surrounding the Kinect skeleton.
         </p>
-        <div class="iframe-container hidden sm:block">
-          <iframe
-            id="iframe2"
-            src="https://player.vimeo.com/video/312834441"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-          />
-        </div>
         <h3>
           Conclusion
         </h3>
@@ -107,9 +111,12 @@ export default {
     font-size: 1.24rem/* 20px */;
     line-height: 1.75rem/* 28px */;
     font-weight:600;
-    text-transform:uppercase;
     margin-top: 1.25rem;
     margin-bottom:0.75rem;
+}
+#summary h3 {
+    text-transform:uppercase;
+    text-decoration: underline;
 }
 .iframe-container {
   overflow: hidden;
@@ -125,6 +132,8 @@ export default {
    position: absolute;
    top: 0;
    width: 100%;
-   padding:10px;
+}
+p a {
+  color: orangered
 }
 </style>
