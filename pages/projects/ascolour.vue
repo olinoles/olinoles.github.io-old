@@ -7,7 +7,7 @@
       <div id="summary" class="flex-shrink-0 border-b-2 mx-5 sm:mx-0 sm:border-b-0 sm:border-r-2 border-gray-300 pr-10 pl-5 sm:pl-10 pb-5 sm:py-5">
         <img
           src="~/static/images/colourmatic-logo.jpg"
-          class="w-full h-auto mb-12 hidden sm:block"
+          class="w-48 h-auto mb-12 hidden sm:block"
         >
         <h3>
           Case Study
