@@ -60,7 +60,7 @@
           <img class="w-full h-auto sm:w-auto sm:h-44 sm:m-5 sm:mr-0" align="right" src="~/static/images/kinect.jpg">
           The Colourmatic project uses the Xbox Kinect sensor along with the <a class="" href="https://www.microsoft.com/en-nz/download/details.aspx?id=40278" rel="noreferrer">Kinect SDK</a> to track users and build a colour profile from the RGB camera on-board. We wrote an algorithm to take the colour average of the user's t-shirt, match it to a known hue, then use design patterns to provide a complimentary colour. The processing is done in the background C# application, which relays information to the front-end built in Adobe Animate in real-time. We built event handlers in the front-end which advance the animations and communicate information when called.
         </p>
-        <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-2.jpg">
+        <img class="w-full h-auto py-5" align="right" src="~/static/images/colourmatic-2.jpg">
         <h3>
           Challenges
         </h3>
@@ -75,7 +75,7 @@
         <p>
           I had a great time working with a new team on this project and learnt a lot during the development. AS Colour was a great brand to develop this project for and gave us a lot of creative freedom in the final product.
         </p>
-        <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-3.jpg">
+        <img class="w-full h-auto py-5" align="right" src="~/static/images/colourmatic-3.jpg">
       </article>
     </div>
   </div>
