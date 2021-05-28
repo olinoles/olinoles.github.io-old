@@ -5,10 +5,16 @@
     </div>
     <div class="flex flex-col sm:flex-row mx-auto my-5 max-w-5xl relative">
       <div id="summary" class="flex-shrink-0 border-b-2 mx-5 sm:mx-0 sm:border-b-0 sm:border-r-2 border-gray-300 pr-10 pl-5 sm:pl-10 pb-5 sm:py-5">
-        <img
-          src="~/static/images/customiser-logo.jpg"
-          class="w-48 h-auto mb-12 hidden sm:block rounded-md"
-        >
+        <a rel="noreferrer" target="_blank" href="https://www.kiwiquads.co.nz/customiser/">
+          <img
+            src="~/static/images/customiser-logo.jpg"
+            class="w-48 h-auto mb-6 hidden sm:block rounded-md cursor-pointer"
+          >
+        </a><div class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-md font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mb-4 mr-auto">
+          <a target="_blank" rel="noreferrer" href="https://www.kiwiquads.co.nz/customiser/">
+            Visit Live Site
+          </a>
+        </div>
         <h3>
           Case Study
         </h3>
