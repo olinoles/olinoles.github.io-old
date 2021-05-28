@@ -27,7 +27,14 @@
         <p>Blender</p>
       </div>
       <article id="content" class="px-10 pb-5">
-        <img class="max-h-72 py-5" src="~/static/images/customiser-2.jpg">
+        <div class="iframe-container my-5 sm:my-3">
+          <iframe
+            id="iframe2"
+            src="https://www.youtube.com/embed/rBYK4YvNQ8U"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+          />
+        </div>
         <h3>
           Goal
         </h3>
@@ -46,13 +53,21 @@
         <p>
           I began this project by creating some sketches of the customisation panel and taking inspiration from other customiser tools online. I started thinking about what components could be customised in the racing drones and started putting together some 3D models of the drone to be customised.
           <br><br>
+        </p>
+        <img class="block w-full h-auto py-5" src="~/static/images/customiser-concept.jpg">
+        <p style="font-size:1rem" class="text-center mb-5 italic">
+          KiwiQuads Customiser Concept Art
+        </p><p>
           Originally I wanted to allow customers to customise and purchase their drone through the tool but decided against it as the maintenance required would be intensive as new products were added and others removed from the store. I settled on 6 different components that could be customised and finished creating all the 3D components in Solidworks. This allowed for over 100,000 different combinations of racing drone designs.
           <br><br>
           Once the models were completed, I exported them into .obj format, applied textures and reflection maps to them in Blender. Then imported the models to a new project with BabylonJS. I hadn’t used Babylon before, so it was a great experience learning to create 3D scenes and customise the environment. Once the models were tested and presenting correctly in Babylon, I created a colour and model switching system for each component by exposing a function that the React customiser panel could call.
           <br><br>
           I created a new React project to build the UI and imported the Babylon scene as a component. Once the UI was all finished, I exported the entire project as a static site and imported it into the KiwiQuads website built on Wordpress. This was preferred so that the customiser app was consistent with the rest of the website and looked native.
         </p>
-        <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-2.jpg">
+        <img class="w-full h-auto py-5" src="~/static/images/drone-render.jpg">
+        <p style="font-size:1rem" class="text-center mb-5 italic">
+          Drone Assembly Render in Solidworks
+        </p>
         <h3>
           Challenges
         </h3>
@@ -66,7 +81,6 @@
         <p>
           The drone customiser was a difficult project for me because of the amount of learning required to use the tools needed. Overall, I am really happy with the finished product and it has been used by several thousand visitors to the KiwiQuads website. I look forward to working with more 3D engines in the future and would like to learn Three.js too.
         </p>
-        <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-3.jpg">
       </article>
     </div>
   </div>
