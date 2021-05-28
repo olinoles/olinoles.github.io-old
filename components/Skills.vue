@@ -23,6 +23,7 @@
                 <ToolIcon label="Vue JS" icon="vuejs.png" />
                 <ToolIcon label="Adobe Illustrator" icon="illustrator.png" />
                 <ToolIcon label="Adobe Photoshop" icon="photoshop.png" />
+                <ToolIcon label="Figma" icon="figma.png" />
               </div>
             </div>
             <div class="flex-grow lg:border-l lg:pl-10 max-w-xl">
