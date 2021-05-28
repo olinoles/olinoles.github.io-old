@@ -24,7 +24,7 @@
         <p>Visual Studio C#</p>
         <p>Adobe ActionScript</p>
       </div>
-      <div id="content" class="px-10 pb-5">
+      <article id="content" class="px-10 pb-5">
         <h3>
           Goal
         </h3>
@@ -76,7 +76,7 @@
           I had a great time working with a new team on this project and learnt a lot during the development. AS Colour was a great brand to develop this project for and gave us a lot of creative freedom in the final product.
         </p>
         <img class="w-full h-auto py-5 sm:hidden" align="right" src="~/static/images/colourmatic-3.jpg">
-      </div>
+      </article>
     </div>
   </div>
 </template>
