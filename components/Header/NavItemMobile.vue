@@ -18,9 +18,22 @@
     </transition>
   </div>
 
-  <nuxt-link v-else :to="path" class="text-base font-medium text-gray-500 hover:text-gray-900">
-    {{ label }}
-  </nuxt-link>
+  <div v-else>
+    <a
+      v-if="!isNavLink"
+      :href="path.path"
+      target="_blank"
+      class="text-base font-medium text-gray-500 hover:text-gray-900"
+    > {{ label }}
+    </a>
+    <nuxt-link
+      v-else
+      :to="path"
+      class="text-base font-medium text-gray-500 hover:text-gray-900"
+    >
+      {{ label }}
+    </nuxt-link>
+  </div>
 </template>
 
 <script>

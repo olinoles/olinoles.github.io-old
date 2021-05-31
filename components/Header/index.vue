@@ -20,6 +20,7 @@
             :label="link.label"
             :path="link.path"
             :has-sub-menu="link.hasSubMenu"
+            :is-nav-link="link.isNavLink"
             :sub-menu-items="link.subItems"
           />
         </nav>
@@ -54,6 +55,7 @@
                   :label="link.label"
                   :path="link.path"
                   :has-sub-menu="link.hasSubMenu"
+                  :is-nav-link="link.isNavLink"
                   :sub-menu-items="link.subItems"
                 />
               </nav>
@@ -86,7 +88,8 @@ export default {
           ]
         },
         { label: 'Interests', path: { path: '/', hash: 'interests' } },
-        { label: 'Contact', path: { path: '/', hash: 'contact' } }
+        { label: 'Contact', path: { path: '/', hash: 'contact' } },
+        { label: 'Download CV', isNavLink: false, path: { path: '/Oliver-Noles-CV.pdf', hash: '' } }
       ]
     }
   },

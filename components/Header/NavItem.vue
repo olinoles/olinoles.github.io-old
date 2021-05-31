@@ -15,10 +15,22 @@
     />
     <HeaderSubmenu v-if="subMenuItems && isOpen" :items="subMenuItems" />
   </div>
-
-  <nuxt-link v-else :to="path" class="text-base font-medium text-gray-500 hover:text-gray-900">
-    {{ label }}
-  </nuxt-link>
+  <div v-else>
+    <a
+      v-if="!isNavLink"
+      :href="path.path"
+      target="_blank"
+      class="text-base font-medium text-gray-500 hover:text-gray-900"
+    > {{ label }}
+    </a>
+    <nuxt-link
+      v-else
+      :to="path"
+      class="text-base font-medium text-gray-500 hover:text-gray-900"
+    >
+      {{ label }}
+    </nuxt-link>
+  </div>
 </template>
 
 <script>
@@ -45,6 +57,11 @@ export default {
       type: Array,
       required: false,
       default: null
+    },
+    isNavLink: {
+      type: Boolean,
+      required: false,
+      default: true
     }
   },
   data () {
