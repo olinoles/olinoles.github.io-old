@@ -60,6 +60,11 @@ export default {
       type: Array,
       required: false,
       default: null
+    },
+    isNavLink: {
+      type: Boolean,
+      required: false,
+      default: true
     }
   },
   data () {
