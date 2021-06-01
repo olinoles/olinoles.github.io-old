@@ -131,4 +131,10 @@ export default {
 p a {
   color: orangered
 }
+p {
+  color: rgb(20, 27, 41);
+}
+h3 {
+  color: rgb(39, 43, 53);
+}
 </style>
