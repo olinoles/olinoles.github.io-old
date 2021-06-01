@@ -60,7 +60,10 @@
           I began this project by creating some sketches of the customisation panel and taking inspiration from other customiser tools online. I started thinking about what components could be customised in the racing drones and started putting together some 3D models of the drone to be customised.
           <br><br>
         </p>
-        <img class="block w-full h-auto py-5" src="~/static/images/customiser-concept.jpg">
+        <LightboxImage
+          src="images/customiser-concept.jpg"
+          class="py-5 w-full h-auto"
+        />
         <p style="font-size:1rem" class="text-center mb-5 italic">
           KiwiQuads Customiser Concept Art
         </p><p>
@@ -70,7 +73,10 @@
           <br><br>
           I created a new React project to build the UI and imported the Babylon scene as a component. Once the UI was all finished, I exported the entire project as a static site and imported it into the KiwiQuads website built on Wordpress. This was preferred so that the customiser app was consistent with the rest of the website and looked native.
         </p>
-        <img class="w-full h-auto py-5" src="~/static/images/drone-render.jpg">
+        <LightboxImage
+          src="images/drone-render.jpg"
+          class="py-5 w-full h-auto"
+        />
         <p style="font-size:1rem" class="text-center mb-5 italic">
           Drone Assembly Render in Solidworks
         </p>
