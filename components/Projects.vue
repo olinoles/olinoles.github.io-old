@@ -10,7 +10,7 @@
         cta-link="https://vimeo.com/312834441"
         description="This creative project for ASColour used a camera and visuals to recommend t-shirts to customers. The display was featured outside the Customs Street store in Auckland CBD."
         link="ascolour/"
-        image="ascolour.png"
+        image="ascolour.jpg"
       />
       <ProjectSummary
         title="KiwiQuads 3D Drone Customiser"
