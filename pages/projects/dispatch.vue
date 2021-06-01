@@ -8,67 +8,69 @@
         <h3>
           Case Study
         </h3>
-        <p>3D Drone Customiser</p>
+        <p>Order Dispatch System</p>
         <p>KiwiQuads, Auckland</p>
         <h3>
           Type
         </h3>
-        <p>Digital Interactive Tool</p>
+        <p>Ecommerce Web Tool</p>
         <h3>
           Tools used
         </h3>
-        <p>ReactJS</p>
-        <p>BabylonJS</p>
-        <p>Solidworks CAD</p>
-        <p>Blender</p>
+        <p>Nuxt JS</p>
+        <p>Vue</p>
+        <p>Visual Studio C#</p>
+        <p>PDFSharp .NET</p>
       </div>
       <article id="content" class="px-10 pb-5">
         <h3>
           Goal
         </h3>
         <p>
-          To develop an interactive tool which allows customers to create their unique racing drone specification
+          To build a web app which makes the order packing process for KiwiQuads efficient, simple, and functional.
         </p>
         <h3>
-          What is the KiwiQuads Customiser?
+          What does an order dispatch system do?
         </h3>
         <p>
-          KiwiQuads retails many different components for their racing drones. These include various propellers, canopies, motors, and other electronics which can be changed and upgraded to affect flight performance. KiwiQuads wanted a way for customers to test and customise their dream racing drone prior to purchasing online. I built this tool using a 3D javascript framework to render any drone combination in real time.
+          This project used a JAMstack architecture to combine the WooCommerce Orders API, NZPost Shipping API, and a local invoice generator app to simplify the process of packing orders, generating shipping labels, and printing invoices. The system is accessible at any location and secured using access keys.
         </p>
         <img class="block w-full h-auto py-5" src="~/static/images/dispatch-full.jpg">
+        <p style="font-size:1rem" class="text-center mb-5 italic">
+          The dispatch app is split into 3 sections for each part of the shipping process
+        </p>
         <h3>
-          My Experience
+          The Problem
         </h3>
         <p>
-          I began this project by creating some sketches of the customisation panel and taking inspiration from other customiser tools online. I started thinking about what components could be customised in the racing drones and started putting together some 3D models of the drone to be customised.
+          As KiwiQuads continued to grow and ship more orders each day, we needed to simplify the packing process into an efficient system which could be easily taught to new staff members. The previous system was prone to picking errors, and took much longer than needed to ship each order as three different systems needed to be used to print each order. My primary goal was to eliminate picking error and reduce packing time. My secondary goal was to create an easier way to generate invoices.
           <br><br>
         </p>
-        <img class="block w-full h-auto py-5" src="~/static/images/customiser-concept.jpg">
-        <p style="font-size:1rem" class="text-center mb-5 italic">
-          KiwiQuads Customiser Concept Art
-        </p><p>
-          Originally I wanted to allow customers to customise and purchase their drone through the tool but decided against it as the maintenance required would be intensive as new products were added and others removed from the store. I settled on 6 different components that could be customised and finished creating all the 3D components in Solidworks. This allowed for over 100,000 different combinations of racing drone designs.
-          <br><br>
-          Once the models were completed, I exported them into .obj format, applied textures and reflection maps to them in Blender. Then imported the models to a new project with BabylonJS. I hadn’t used Babylon before, so it was a great experience learning to create 3D scenes and customise the environment. Once the models were tested and presenting correctly in Babylon, I created a colour and model switching system for each component by exposing a function that the React customiser panel could call.
-          <br><br>
-          I created a new React project to build the UI and imported the Babylon scene as a component. Once the UI was all finished, I exported the entire project as a static site and imported it into the KiwiQuads website built on Wordpress. This was preferred so that the customiser app was consistent with the rest of the website and looked native.
+        <h3>
+          My Solution
+        </h3>
+        <p>
+          I opted to build this tool as a web app so that it could be accessible by any staff when required. I began by mapping out the inputs, outputs, and functions that app needed on paper. Once I understood the flow of the page, I drafted some UI concepts in Figma and began a new Nuxt/Vue project. <br><br>Once the first prototype was finished, I presented it to our picking team whom provided valuable feedback on the flow and layout of the application. After the web app had been through several revisions, the picking team began to use it as part of their daily workflow. I then started work on my secondary goal of building a invoice generation tool.<br><br>As the invoices only needed to be generated on one machine for printing, I decided to build this tool in Visual Studio .NET which had much better libraries for generating documents, PDFs, and automated printing. I wanted the whole process to be a one button click for the packer so that no additional dialogs would appear.
         </p>
-        <img class="w-full h-auto py-5" src="~/static/images/drone-render.jpg">
-        <p style="font-size:1rem" class="text-center mb-5 italic">
-          Drone Assembly Render in Solidworks
+        <img class="w-80 mx-auto h-auto py-5 px-5 inline-block" src="~/static/images/invoice-generator.jpg">
+        <img class="w-80 mx-auto h-auto py-5 px-5 inline-block shadow-md" src="~/static/images/invoice.jpg">
+        <p style="font-size:1rem" class="text-center my-5 italic">
+          The backend invoice generator and an invoice generated by it
+        </p>
+        <p>
+          The application opens a local websocket which accepts JSON data. Orders can be sent to the tool from the Dispatch web app via the websocket. The tool then generates the invoice, prints it, and logs the event. I later added support for printing various labels depending if the customer wanted to pickup their order locally.
         </p>
         <h3>
           Challenges
         </h3>
         <p>
-          The first challenge for me was building the difficult shapes of the drone components in Solidworks. Many of the components have complicated curves such as the canopy and propellers. I brushed up on a few Solidworks tutorials and learnt 3D surfacing to create the curved surfaces used in the models now. I’m really pleased I pursued to learn surfacing as it is an advanced feature of modelling but can create some very dynamic models.<br><br>
-          The second biggest challenge was building a 3D scene in BabylonJS. Not having done much 3D work before, a game engine built in pure Javascript was daunting to learn. I read thoroughly through the Babylon documentation and used a tutorial scene to get me started with importing models and customising lighting. After several days of fiddling with the lighting placement and model positions, I was happy with the scene created. I later added a circular landing pad and some tools in the background for effect.
+          This was the biggest web app I have worked on so far. It really tested my skills in working with a complex project. There are many supporting functions which manipulate the data between the two integrations. My biggest challenge was finding a way to efficiently store the large amount of data from the WooCommerce API then building the communication between the web app and the invoice generation tool. I thought the websocket was a really elegant solution to this and works incredibly well.
         </p>
         <h3>
           Conclusion
         </h3>
         <p>
-          The drone customiser was a difficult project for me because of the amount of learning required to use the tools needed. Overall, I am really happy with the finished product and it has been used by several thousand visitors to the KiwiQuads website. I look forward to working with more 3D engines in the future and would like to learn Three.js too.
+          This was one of the best tools I have built for KiwiQuads. It saves many hours of time every week and has eliminated picking error almost completely. I am proud to say I achieved both my two goals of reducing picking error and automating the invoice generation process. Since the project was completed, I have continued to add additional functionality such as built-in barcode scanning, and 2D barcodes printed on the invoices for integration with future warehouse systems we may use.
         </p>
       </article>
     </div>
