@@ -127,7 +127,6 @@ export default {
 }
 #summary h3 {
     text-transform:uppercase;
-    text-decoration: underline;
 }
 .iframe-container {
   overflow: hidden;
