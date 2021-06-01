@@ -1,4 +1,6 @@
 # Oliver Noles Portfolio
 
-Thanks for viewing!
-You can contact me oliver@noles.nz
+Thank you for viewing my portfolio!
+I build this project using Vue.js and Nuxt.js
+
+Please feel free to raise an issue if you have any concerns or questions!
