@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -5,6 +7,9 @@ module.exports = {
     extend: {
       transitionProperty: {
         height: 'height'
+      },
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
       }
     }
   },
