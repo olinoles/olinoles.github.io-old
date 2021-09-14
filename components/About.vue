@@ -11,8 +11,8 @@
         </h2>
         <p class="mt-6 max-w-3xl text-xl text-gray-300">
           I'm an Auckland-based tech enthusiast experienced in web technologies, creative projects, and UI design.
-          <br>
-          Currently I am a Front-end Engineer at <a rel="noreferrer" href="www.themarket.nz" target="_blank">TheMarket NZ</a><br>
+          <br><br>
+          Currently I am a Front-end Engineer at <a rel="noreferrer" href="www.themarket.nz" target="_blank">TheMarket NZ</a><br><br>
           I am most interested in full-stack development and enjoy working with both front-end and back-end tools. Outside of webdev, I enjoy hobbies that involve robotics and electronics, including 3D printing, building FPV Drones and CAD design.
         </p>
         <div ref="readmore" class="transition-height duration-300 ease-out overflow-hidden h-0">
