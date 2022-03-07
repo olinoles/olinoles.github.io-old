@@ -26,7 +26,7 @@
         </div>
       </div>
       <img
-        class="mt-8 lg:mt-24 lg:h-80 lg:w-80 w-52 h-52 mx-auto lg:mx-20  rounded-full ring-4 ring-gray-600 ring-opacity-50"
+        class="mt-8 object-cover lg:mt-24 lg:h-80 lg:w-80 w-52 h-52 mx-auto lg:mx-20  rounded-full ring-4 ring-gray-600 ring-opacity-50"
         src="~/assets/profile.jpg"
         alt=""
       >
