@@ -92,8 +92,8 @@ export default {
   layout: 'project',
   head () {
     return {
-      title: 'Oliver Noles - 3D Drone Customiser Project',
-      description: 'Oliver Noles Portfolio. 3D Drone Customiser Project'
+      title: 'Oliver Noles - Ecommerce order dispatch system',
+      description: 'Oliver Noles Portfolio. Order dispatch system'
     }
   }
 }
