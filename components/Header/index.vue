@@ -87,7 +87,6 @@ export default {
             { label: 'Order Dispatch System', path: '/projects/dispatch' }
           ]
         },
-        { label: 'Interests', path: { path: '/', hash: 'interests' } },
         { label: 'Contact', path: { path: '/', hash: 'contact' } },
         { label: 'Download CV', isNavLink: false, path: { path: '/Oliver-Noles-CV.pdf', hash: '' } }
       ]
