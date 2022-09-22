@@ -18,7 +18,7 @@
                 <ToolIcon label="Javascript ES6" icon="js.png" />
                 <ToolIcon label="CSS" icon="css.png" />
                 <ToolIcon label="Typescript" icon="ts.png" />
-                <ToolIcon label="GraphQL" icon="graphql.png" />
+                <ToolIcon label="React / React-native" icon="react.png" />
                 <ToolIcon label="Nuxt JS" icon="nuxt.png" />
                 <ToolIcon label="Node JS" icon="node.png" />
                 <ToolIcon label="Visual Studio C#" icon="visualstudio.png" />
@@ -75,10 +75,10 @@
 </template>
 
 <script>
-import ToolIcon from './ToolIcon.vue'
+import ToolIcon from "./ToolIcon.vue";
 export default {
   components: { ToolIcon }
-}
+};
 </script>
 <style scoped>
 .med-blue {
